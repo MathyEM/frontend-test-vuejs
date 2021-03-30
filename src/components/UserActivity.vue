@@ -42,7 +42,7 @@ export default {
                 { name: 'thu', val: 40 },
                 { name: 'fri', val: 50 },
                 { name: 'sat', val: 10 },
-                { name: 'sun', val: 5 }
+                { name: 'sun', val: 15 }
             ]
         }
     }

@@ -37,6 +37,7 @@ export default {
     display: grid;
     grid-template-columns: 2fr 10fr 4fr;
     grid-gap: 0.8rem;
+    padding: $vertical-padding $side-padding;
 
     .personal-info {
         margin: auto;

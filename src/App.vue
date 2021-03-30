@@ -81,10 +81,6 @@ a:hover, .value:hover, .item:hover {
     border-bottom: lightgray solid 1px;
   }
 
-  .base-info, .category, .orders {
-    padding: $vertical-padding $side-padding;
-  }
-
   /// CONTROLS START
   .control {
       @include no-select;
