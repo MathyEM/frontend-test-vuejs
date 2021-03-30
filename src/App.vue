@@ -3,6 +3,7 @@
     <BaseInfo />
     <UserCategory />
     <UserActivity />
+    <UserOrder />
   </section>
 </template>
 
@@ -10,13 +11,15 @@
 import BaseInfo from './components/BaseInfo'
 import UserCategory from './components/UserCategory'
 import UserActivity from './components/UserActivity'
+import UserOrder from './components/UserOrders'
 
 export default {
   name: 'App',
   components: {
     BaseInfo,
     UserCategory,
-    UserActivity
+    UserActivity,
+    UserOrder,
   },
 }
 </script>
