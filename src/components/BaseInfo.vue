@@ -48,7 +48,7 @@ export default {
             }
         }
     }
-
+    /// CONTROLS START
     .sound-controls {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -84,6 +84,7 @@ export default {
             }
         }
     }
+    /// CONTROLS END
 
 }
 </style>
