@@ -13,29 +13,21 @@
             </div>
         </div>
         <div class="sound-controls">
-            <label for="deafen-toggle">
-                <input type="checkbox" name="deafen-toggle" id="deafen-toggle" class="control-toggle">
-                <div class="control deafen">
-                    <i class="fas fa-volume-mute"></i>
-                </div>
-            </label>
-            <label for="mute-toggle">
-                <input type="checkbox" name="mute-toggle" id="mute-toggle" class="control-toggle">
-                <div class="control mute">
-                    <i class="fas fa-microphone-slash"></i>
-                </div>
-            </label>
+            <AudioControlButton name="deafen" iconName="fas fa-volume-mute" />
+            <AudioControlButton name="mute" iconName="fas fa-microphone-slash" />
         </div>
     </div>
 </template>
 
 <script>
 import ProfilePicture from './ProfilePicture'
+import AudioControlButton from './AudioControlButton'
 
 export default {
     name: 'BaseInfo',
     components: {
-        ProfilePicture
+        ProfilePicture,
+        AudioControlButton
     }
 }
 </script>
