@@ -2,18 +2,21 @@
   <section class="user-container">
     <BaseInfo />
     <UserCategory />
+    <UserActivity />
   </section>
 </template>
 
 <script>
 import BaseInfo from './components/BaseInfo'
 import UserCategory from './components/UserCategory'
+import UserActivity from './components/UserActivity'
 
 export default {
   name: 'App',
   components: {
     BaseInfo,
-    UserCategory
+    UserCategory,
+    UserActivity
   },
 }
 </script>
@@ -75,7 +78,7 @@ a:hover, .value:hover, .item:hover {
     border-bottom: lightgray solid 1px;
   }
 
-  .base-info, .category, .activity, .orders {
+  .base-info, .category, .orders {
     padding: $vertical-padding $side-padding;
   }
 
