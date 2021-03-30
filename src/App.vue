@@ -1,53 +1,35 @@
 <template>
   <section class="user-container">
-    <h1>Hello World</h1>
+    <BaseInfo />
   </section>
 </template>
 
 <script>
+import BaseInfo from './components/BaseInfo'
 
 export default {
   name: 'App',
-  components: {},
+  components: {
+    BaseInfo
+  },
 }
 </script>
 
 <style lang="scss">
-/// VARIABLES START
-$lightgreen: lighten(rgb(0, 158, 61), 10);
-$green: green;
-$white: white;
-$black: lighten(black, 20%);
-$darkgray: darkgray;
-$gray: gray;
-$lightgray: lighten(lightgray, 6%);
-$red: lighten(red, 25%);
-$blue: saturate(dodgerblue, 10%);
-
-$vertical-padding: 0.5rem;
-$side-padding: 1rem;
-
-$border-radius: 5px;
-/// VARIABLES END
-
-/// MIXINS START
-@mixin no-select {
-  -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-     -khtml-user-select: none; /* Konqueror HTML */
-       -moz-user-select: none; /* Old versions of Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-            user-select: none; /* Non-prefixed version, currently
-                                  supported by Chrome, Edge, Opera and Firefox */
-}
-/// MIXINS END
-
 /// BASE STYLING START
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+div {
+  display: inline-block;
+}
+
+#app {
+  display: block;
 }
 
 h4 {
@@ -94,9 +76,6 @@ a:hover, .value:hover, .item:hover {
     padding: $vertical-padding $side-padding;
   }
 
-  div {
-    display: inline-block;
-  }
 }
 
 </style>
