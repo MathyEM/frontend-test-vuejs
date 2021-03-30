@@ -76,6 +76,24 @@ a:hover, .value:hover, .item:hover {
     padding: $vertical-padding $side-padding;
   }
 
+  /// CONTROLS START
+  .control {
+      @include no-select;
+
+      &:hover {
+          $speed: 100ms;
+          filter: brightness(0.9);
+          box-shadow: inset -1px 1px 3px -2px rgba(0, 0, 0, 70%);
+          transition: background-color $speed, box-shadow $speed;
+      }
+
+      &:active {
+          box-shadow: inset -2px 2px 6px -4px rgba(0, 0, 0, 70%);
+      }
+  }
+  /// CONTROLS END
+
 }
+/// CONTAINER END
 
 </style>
