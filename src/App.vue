@@ -1,16 +1,19 @@
 <template>
   <section class="user-container">
     <BaseInfo />
+    <UserCategory />
   </section>
 </template>
 
 <script>
 import BaseInfo from './components/BaseInfo'
+import UserCategory from './components/UserCategory'
 
 export default {
   name: 'App',
   components: {
-    BaseInfo
+    BaseInfo,
+    UserCategory
   },
 }
 </script>
